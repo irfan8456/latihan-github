@@ -21,6 +21,35 @@
         .font-latin {
             font-family: "Arizonia", cursive;
         }
+
+        .bunga-atas-kiri {
+            position: absolute;
+            width: 50%;
+            left: -20%;
+            top: -7%;
+        }
+
+        .bunga-atas-kanan {
+            position: absolute;
+            width: 50%;
+            right: -20%;
+            top: -7%;
+        }
+
+        .bunga-bawah-kiri {
+            position: absolute;
+            width: 50%;
+            left: -10%;
+            bottom: -10%;
+        }
+
+        .bunga-bawah-kanan {
+            position: absolute;
+            width: 50%;
+            right: -10%;
+            bottom: -10%;
+        }
+        
     </style>
 </head>
 <body class="bg-white">
@@ -28,7 +57,12 @@
     <section
         class="overflow-hidden relative text-center mx-auto h-screen w-full max-w-md flex items-center justify-center flex-col"
         style="background-color: #D2EBE8;"
-    >
+    ><div>
+        <img src="/images/flower-top-left.png" alt="flower" class="bunga-atas-kiri">
+        <img src="/images/flower-top-right.png" alt="flower" class="bunga-atas-kanan">
+        <img src="/images/flower-bottom-left.png" alt="flower" class="bunga-bawah-kiri">
+        <img src="/images/flower-bottom-right.png" alt="flower" class="bunga-bawah-kanan">
+    </div>
         <div style="position: relative; z-index: 99;">
             <div class="mb-5" data-aos="zoom-in" data-aos-duration="3000">The Wedding Of</div>
             <div class="mb-4 mx-auto size-44 rounded-full overflow-hidden" data-aos="flip-up" data-aos-duration="3000">
@@ -131,7 +165,7 @@
     lagu.play();
     })
 
-    var countDownDate = new Date("Jan 1 , 2023, 15:37:25").getTime();
+    var countDownDate = new Date("Jan 1 , 2024, 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
